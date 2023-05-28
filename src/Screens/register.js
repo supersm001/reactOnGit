@@ -1,32 +1,36 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import "../Styles/login.css";
-import { FaSignInAlt, FaUserAlt, FaUnlockAlt } from "react-icons/fa";
+import "../Styles/register.css";
+import { FaUserCircle, FaUserAlt, FaUnlockAlt } from "react-icons/fa";
+import { GrMail } from "react-icons/gr";
 import { BiRightArrowAlt } from "react-icons/bi";
-import { setLogin, setPassword, setUsername } from "../redux/reducer";
+import { setEmail, setLogin, setPassword, setUsername } from "../redux/reducer";
 import { Link } from "react-router-dom";
 
-const Login = () => {
+const Register = () => {
   const dispatch = useDispatch();
   const [tUsername, setTUsername] = useState("");
+  const [tEmail, setTEmail] = useState("");
   const [tPassword, setTPassword] = useState("");
 
-  const LoginHandler = () => {
-    if (tUsername != "" && tPassword != "") {
+  const RegisterHandler = () => {
+    if (tUsername != "" && tEmail != "" && tPassword != "") {
       dispatch(setUsername(tUsername));
+      dispatch(setEmail(tEmail));
       dispatch(setPassword(tPassword));
       dispatch(setLogin(true));
+      window.location = "/";
     } else {
-      alert("Please Enter Username & Password!!!");
+      alert("Please Enter Username, Eamil & Password!!!");
     }
   };
 
   return (
     <div className="container">
-      <div className="loginBox">
-        <FaSignInAlt className="loginIcon" />
-        <h1 className="heading">Welcome!</h1>
-        <p className="subHeading">Sign In to your Account</p>
+      <div className="createBox">
+        <FaUserCircle className="createIcon" />
+        <h1 className="heading">Create Account!</h1>
+        <p className="subHeading">Signing Up For Account</p>
         <div className="inputSec">
           <p className="inputLabel">Username</p>
           <div className="inputDiv">
@@ -38,6 +42,19 @@ const Login = () => {
               }}
             />
             <FaUserAlt className="inputIcon" />
+          </div>
+        </div>
+        <div className="inputSec">
+          <p className="inputLabel">Email</p>
+          <div className="inputDiv">
+            <input
+              type="text"
+              className="inputBox"
+              onChange={(e) => {
+                setTEmail(e.target.value);
+              }}
+            />
+            <GrMail className="inputIcon" />
           </div>
         </div>
         <div className="inputSec">
@@ -53,23 +70,23 @@ const Login = () => {
             <FaUnlockAlt className="inputIcon" />
           </div>
         </div>
-        <div className="forgetPasswordDiv">
+        {/* <div className="forgetPasswordDiv">
           <p className="forgetPassword">Forget Password?</p>
-        </div>
+        </div> */}
         <div className="submitDiv">
           <button
-            className="loginButton"
+            className="createButton"
             onClick={() => {
-              LoginHandler();
+              RegisterHandler();
             }}
           >
-            Login
+            Create
             <BiRightArrowAlt style={{ fontSize: 25 }} />
           </button>
         </div>
         <div className="createAccountLinkDiv">
-          <Link className="decoNone" to="/register">
-            <p className="forgetPassword">Don't Have an Account? Click Here</p>
+          <Link className="decoNone" to="/login">
+            <p className="forgetPassword">Already Have an Account? Login</p>
           </Link>
         </div>
       </div>
@@ -77,4 +94,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;

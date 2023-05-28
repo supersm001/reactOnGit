@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap');
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Titillium Web', sans-serif;
+  
+}
+
+:root{
+   --mainColor:#29335c;
+   --mainColorLight:#5163ab;
+   --secondaryColor:#DB2B39;
+   --textColor:#eee;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: rgba(100,100,100,0.1); */
+
+}
+
+.createBox{
+    height: 85vh;
+    width: 22rem;
+    /* min-width: 20rem; */
+    background-color: #fafafa;
+    border-radius: 1px;
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.15);
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.createIcon{
+    color: var(--mainColorLight);
+    font-size: 2.5rem;
+}
+
+.heading{
+    color: var(--mainColorLight);
+    font-weight: bolder;
+}
+
+.subHeading{
+    color: darkgray;
+    font-weight: 700;
+}
+
+.inputSec{
+    width: 80%;
+    &:focus-within{
+        .inputDiv{
+            border-bottom: 2px solid var(--mainColorLight);
+        }
+        .inputIcon{
+            color: var(--mainColorLight);
+        }
+        .inputLabel{
+            color: var(--mainColorLight);
+        }
+       
+    }
+}
+
+
+.inputDiv{
+    width: 100%;
+    border-bottom: 2px solid lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 10px;
+   
+}
+
+.inputLabel{
+    color: lightgrey;
+    font-weight: 700;
+}
+
+.inputBox{
+    border:none;
+    background: transparent;
+    flex:1;
+    outline: none;
+    caret-color: var(--mainColorLight);
+    color: #5163ab;
+    font-weight: 700;
+    padding-right: 10px;
+}
+
+.inputIcon{
+    color: lightgrey;
+}
+
+.forgetPasswordDiv{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.forgetPassword{
+    color:var(--mainColorLight);
+    font-weight: 500;
+    cursor: pointer;
+    &:hover{
+        text-decoration: underline;
+        transition: 1s;
+        font-weight: 700;
+    }
+    &:active{
+        opacity: 0.5;
+        transition: 0.1s;
+    }
+}
+
+.submitDiv{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.createButton{
+    background-color:var(--mainColorLight);
+    padding: 5px 2rem;
+    border: none;
+    border-radius: 5px;
+    color: var(--textColor);
+    font-weight: 700;
+    -webkit-box-shadow: 3px 4px 16px -1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 3px 4px 16px -1px rgba(0,0,0,0.1); 
+    box-shadow: 3px 4px 16px -1px rgba(0,0,0,0.1);
+    &:hover{
+        scale: 1.1;
+        transition: 0.3s;
+        -webkit-box-shadow: 3px 4px 16px -1px rgba(0,0,0,0.55);
+        -moz-box-shadow: 3px 4px 16px -1px rgba(0,0,0,0.55); 
+        box-shadow: 3px 4px 16px -1px rgba(0,0,0,0.55);
+    }
+    &:active{
+        opacity: 0.5;
+        transition: 0.1s;
+    }
+    
+}
+
+.createAccountLinkDiv{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.decoNone{
+    text-decoration: none;
+}

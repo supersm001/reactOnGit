@@ -7,16 +7,19 @@ import Home from "./Screens/home";
 import Profile from "./Screens/profile";
 import Cart from "./Screens/cart";
 import Login from "./Screens/login";
+import Register from "./Screens/register";
 
 const App = () => {
-  const { login } = useSelector((state) => state.userDataReducer);
+  const { username, password, login, email } = useSelector(
+    (state) => state.userDataReducer
+  );
 
-  useEffect(() => {
-    console.log(login);
-  }, []);
+  // useEffect(() => {
+  //   console.log("Data from reducer : ", username, password, email, login);
+  // }, []);
 
   return (
-    <>
+    <div className="app">
       {login ? (
         <BrowserRouter>
           <NavBar />
@@ -30,9 +33,10 @@ const App = () => {
         </BrowserRouter>
       ) : (
         <BrowserRouter>
-          <NavBar />
+          {/* <NavBar /> */}
           <Routes>
             <Route path="*" Component={Login} />
+            <Route path="register" Component={Register} />
             {/* <Route path="/" Component={Login} />
           <Route path="/profile" Component={Login} />
           <Route path="/about" Component={Login} />
@@ -40,7 +44,7 @@ const App = () => {
           </Routes>
         </BrowserRouter>
       )}
-    </>
+    </div>
   );
 };
 
