@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/reactOnGit/static/css/main.de39beef.css",
-    "main.js": "/reactOnGit/static/js/main.1b0e6822.js",
+    "main.css": "/reactOnGit/static/css/main.0de813a6.css",
+    "main.js": "/reactOnGit/static/js/main.9c12990b.js",
     "static/js/787.8f115d99.chunk.js": "/reactOnGit/static/js/787.8f115d99.chunk.js",
+    "static/media/userIcon.png": "/reactOnGit/static/media/userIcon.5a9deb3afe3950a6aef1.png",
     "index.html": "/reactOnGit/index.html",
-    "main.de39beef.css.map": "/reactOnGit/static/css/main.de39beef.css.map",
-    "main.1b0e6822.js.map": "/reactOnGit/static/js/main.1b0e6822.js.map",
+    "main.0de813a6.css.map": "/reactOnGit/static/css/main.0de813a6.css.map",
+    "main.9c12990b.js.map": "/reactOnGit/static/js/main.9c12990b.js.map",
     "787.8f115d99.chunk.js.map": "/reactOnGit/static/js/787.8f115d99.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.de39beef.css",
-    "static/js/main.1b0e6822.js"
+    "static/css/main.0de813a6.css",
+    "static/js/main.9c12990b.js"
   ]
 }
