@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap');
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Titillium Web', sans-serif;
+}
+
+:root{
+   --mainColor:#29335c;
+   --mainColorLight:#5163ab;
+   --secondaryColor:#DB2B39;
+   --textColor:#eee;
+}
+
+.homeContainer{
+    width: 100%;
+    /* height: 100vh;  */
+    padding:1rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-around; */
+    /* background-color: rgba(100,100,100,0.1); */
+
+}
+
+.corousalDiv{
+    width: 100%;
+    /* height: 30vh; */
+}
+
+.corousalItem{
+    width: 100%;
+    background-color: #5163ab;
+}
+
+.flatListDiv{
+    width: 100%;
+    height: 50vh;
+}
+
+.productDiv{
+    height: 100%;
+    width: 100%;
+    background-color: var(--mainColorLight);
+}
+
+.customGrid{
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+}
