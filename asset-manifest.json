@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/reactOnGit/static/css/main.0de813a6.css",
-    "main.js": "/reactOnGit/static/js/main.9c12990b.js",
+    "main.css": "/reactOnGit/static/css/main.7cf50c22.css",
+    "main.js": "/reactOnGit/static/js/main.5e8eba28.js",
     "static/js/787.8f115d99.chunk.js": "/reactOnGit/static/js/787.8f115d99.chunk.js",
+    "static/media/banner1.png": "/reactOnGit/static/media/banner1.c54d062e5885af8f4c77.png",
     "static/media/userIcon.png": "/reactOnGit/static/media/userIcon.5a9deb3afe3950a6aef1.png",
+    "static/media/banner2.jpg": "/reactOnGit/static/media/banner2.a07d438a1a678809647a.jpg",
+    "static/media/banner3.jpg": "/reactOnGit/static/media/banner3.2d42af89c9b9ffbc46ea.jpg",
     "index.html": "/reactOnGit/index.html",
-    "main.0de813a6.css.map": "/reactOnGit/static/css/main.0de813a6.css.map",
-    "main.9c12990b.js.map": "/reactOnGit/static/js/main.9c12990b.js.map",
+    "main.7cf50c22.css.map": "/reactOnGit/static/css/main.7cf50c22.css.map",
+    "main.5e8eba28.js.map": "/reactOnGit/static/js/main.5e8eba28.js.map",
     "787.8f115d99.chunk.js.map": "/reactOnGit/static/js/787.8f115d99.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0de813a6.css",
-    "static/js/main.9c12990b.js"
+    "static/css/main.7cf50c22.css",
+    "static/js/main.5e8eba28.js"
   ]
 }
